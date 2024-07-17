@@ -31,16 +31,16 @@ class TPLAY_API():
         # self.check_and_update_tplay_fetcher_file
         self.channels = requests.get(self.FETCHER).json()
 
-    def get_hmac_v2(self):
+    def get_hmac(self):
         response = requests.get(self.HMAC).json()['data']
         return response['hmac']['hdnea']['value']
 
-
+"""
     def get_hmac(self):
         response = requests.get(self.HMAC_v2)
         matches = re.findall(r'\?hdnea=exp=[^"]+', response.text)
         return matches[0].replace("?", "").strip()
-
+"""
     def get_data(self):
       
 
