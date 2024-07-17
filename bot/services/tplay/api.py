@@ -35,15 +35,7 @@ class TPLAY_API():
         response = requests.get(self.HMAC).json()['data']
         return response['hmac']['hdnea']['value']
 
-"""
-    def get_hmac(self):
-        response = requests.get(self.HMAC_v2)
-        matches = re.findall(r'\?hdnea=exp=[^"]+', response.text)
-        return matches[0].replace("?", "").strip()
-"""
     def get_data(self):
-      
-
         data = [channel for channel in self.channels['data']['channels'] if (channel.get('name').replace(" ", "").lower() == self.channel_slug.lower())][0]
 
         if data:
