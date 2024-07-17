@@ -1,4 +1,4 @@
-FROM thanioruvan/tplay:latest
+FROM python:3.10
 
 RUN apt -qq update && apt -qq install -y git wget ffmpeg
  
