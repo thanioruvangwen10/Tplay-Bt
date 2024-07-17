@@ -9,20 +9,20 @@ dirName = os.path.basename(dirPath)
 
 
 class TG_CONFIG:
-    api_id = 
+    api_id = int(os.environ.get("API_ID"))
 
-    api_hash = ""
+    api_hash = os.environ.get("API_HASH")
 
-    bot_token = ""
+    bot_token = os.environ.get("BOT_TOKEN")
 
     #DEVS or #OWNERS
-    sudo_users = [1984763765, 6360672597]
+    sudo_users = set(int(x) for x in os.environ.get("AUTH_USERS", "").split())
 
-    session = "conan76_web_dl_bot"
+    session = "tamil_iptv_record_bot"
 
-    bot_creater = "Conan76"  # Don't Remove if you Respect the DEV
+    bot_creater = "ThaniOruvan"  # Don't Remove if you Respect the DEV
 
-    bot_creater_id = "@conan7612"  # Don't Remove if you Respect the DEV
+    bot_creater_id = "@thanioruvan"  # Don't Remove if you Respect the DEV
 
 
 class UPLOAD_CONGIF:
@@ -83,7 +83,7 @@ class FILENAME_CONFIG:
     language_order = ['hi', 'ta', 'te', 'bn', 'gu', 'pa', 'as', 'or',
                     'ml', 'mr', 'kn', 'th', 'ja', 'th', 'id', 'ms', 'ko', 'bho', 'bh', 'en']
 
-    default_group_tag = "RV" # Don't change it if you Respect the DEV
+    default_group_tag = "ThaniOruvan" # Don't change it if you Respect the DEV
 
     #Dict made to add Group Tag according to the user requesting to DL (according to there TG ID) if not in list then takes the default_group_tag
     group_tag_mapping = {
@@ -107,7 +107,7 @@ A TG WEB-DL Bot</b>
 
 > <code>{}</code>
 
-<b>Made by @conan7612</b>
+<b>Made by @ThaniOruvan/b>
 """
 
 SIMPLE_CAPTION = '''<code>{}</code>'''
