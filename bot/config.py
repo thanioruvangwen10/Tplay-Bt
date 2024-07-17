@@ -80,7 +80,7 @@ class FILENAME_CONFIG:
 
     underscore_before_after_group_tag = "__"
 
-    language_order = ['hi', 'ta', 'te', 'bn', 'gu', 'pa', 'as', 'or',
+    language_order = ['ta', 'te', 'hi', 'bn', 'gu', 'pa', 'as', 'or',
                     'ml', 'mr', 'kn', 'th', 'ja', 'th', 'id', 'ms', 'ko', 'bho', 'bh', 'en']
 
     default_group_tag = "ThaniOruvan" # Don't change it if you Respect the DEV
@@ -107,7 +107,7 @@ A TG WEB-DL Bot</b>
 
 > <code>{}</code>
 
-<b>Made by @ThaniOruvan/b>
+<b>Made by ThaniOruvan</b>
 """
 
 SIMPLE_CAPTION = '''<code>{}</code>'''
