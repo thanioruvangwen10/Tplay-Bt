@@ -16,7 +16,7 @@ class TG_CONFIG:
     bot_token = os.environ.get("BOT_TOKEN")
 
     #DEVS or #OWNERS
-    sudo_users = set(int(x) for x in os.environ.get("AUTH_USERS", "").split())
+    sudo_users = list(int(i) for i in os.environ.get("AUTH_USERS", "").split(" ")) if os.environ.get("AUTH_USERS") else ["887049386"]
 
     session = "tamil_iptv_record_bot"
 
