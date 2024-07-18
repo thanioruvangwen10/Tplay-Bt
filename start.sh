@@ -1,1 +1,1 @@
-python3 app.py && python3 -m bot
+gunicorn app:app & python3 -m bot
